@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Project2</string>
+    <string name="success">Successfully Created</string>
+    <string name="invalid">Username Already Exists!</string>
+    <string name="no_user">Username Field Empty</string>
+    <string name="no_pass">No Password Was Entered</string>
+    <string name="failed">Failed To Add User</string>
+    <string name="no_username">Username Does Not Exist</string>
+    <string name="welcome">Success!</string>
+    <string name="incorrect_password">Incorrect Password</string>
+    <string name="title_activity_manage_system2">ManageSystem2</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="no_book">No Book in Genre</string>
+    <string name="not_privileged">You Do Not Have Privileges</string>
+    <string name="command">I AM SWORN TO OBEY</string>
+    <string name="done">IT HAS BEEN DONE</string>
+    <string name="futile">RESISTANCE IS FUTILE</string>
+    <string name="goodbye">Goodbye</string>
+</resources>
