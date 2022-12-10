@@ -18,10 +18,14 @@ public class Book {
     @ColumnInfo(name="genre")
     private String genre;
 
-    public Book(String title, String author, String genre) {
+    @ColumnInfo(name="who")
+    private String who;
+
+    public Book(String title, String author, String genre, String who) {
         this.title = title;
         this.author = author;
         this.genre = genre;
+        this.who = who;
     }
 
     public int getId() {
@@ -52,10 +56,19 @@ public class Book {
         return genre;
     }
 
+    public String getWho() {
+        return who;
+    }
+
+    public void setWho(String who) {
+        this.who = who;
+    }
+
     public void setGenre(String genre) {
         this.genre = genre;
     }
+
     public String toString() {
-        return title + " | " + author + " | " + genre;
+        return title;
     }
 }

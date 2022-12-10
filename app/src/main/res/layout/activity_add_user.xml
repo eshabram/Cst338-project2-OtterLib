@@ -8,16 +8,18 @@
 
     <EditText
         android:id="@+id/user_name"
-        android:layout_width="wrap_content"
+        android:layout_width="162dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:hint="Enter Username" />
+
     <EditText
         android:id="@+id/password"
-        android:layout_width="wrap_content"
+        android:layout_width="161dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:hint="Enter Password" />
+
     <EditText
         android:id="@+id/privilege"
         android:layout_width="wrap_content"
@@ -31,12 +33,15 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:text="Create Account" />
-    <EditText
-        android:id="@+id/enter_user_delete"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:hint="Enter Username" />
+
+    <Spinner
+        android:id="@+id/user_spinner"
+        android:layout_width="327dp"
+        android:layout_height="59dp"
+        android:backgroundTint="@color/teal_200"
+        android:textAlignment="center"
+        android:spinnerMode="dialog" />
+
     <Button
         android:id="@+id/delete_account"
         android:layout_margin="4dp"

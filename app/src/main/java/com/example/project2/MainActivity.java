@@ -33,10 +33,9 @@ public class MainActivity extends AppCompatActivity {
         userBank = db.user().getAll();
         bookBank = db.book().getAll();
 
-//        db.book().delete(db.book().getBook("The Grapes Of Wrath"));
 //        db.book().deleteAll();
 //        db.user().deleteAll();
-
+//        db.trans().deleteAll();
 
         binding.createAccount.setOnClickListener(v -> {
             Intent i = new Intent(MainActivity.this, CreateAccount.class);

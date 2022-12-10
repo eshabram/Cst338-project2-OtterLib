@@ -7,9 +7,9 @@
 
     <Button
         android:id="@+id/manage_user"
-        android:layout_margin="4dp"
-        android:layout_width="wrap_content"
+        android:layout_width="182dp"
         android:layout_height="wrap_content"
+        android:layout_margin="4dp"
         android:text="Manage Users" />
     <Button
         android:id="@+id/manage_books"
@@ -17,6 +17,28 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Manage Book List" />
+
+    <Button
+        android:id="@+id/delete_trans"
+        android:layout_width="184dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="4dp"
+        android:text="Delete All Transactions" />
+
+    <Button
+        android:id="@+id/view_transactions"
+        android:layout_width="184dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="4dp"
+        android:text="View Transactions" />
+    <Spinner
+        android:id="@+id/trans_spinner"
+        android:layout_width="262dp"
+        android:layout_height="59dp"
+        android:backgroundTint="@color/teal_200"
+        android:spinnerMode="dialog" />
     <Button
         android:id="@+id/sign_out"
         android:layout_margin="4dp"
@@ -24,5 +46,6 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:text="Sign Out" />
+
 
 </LinearLayout>

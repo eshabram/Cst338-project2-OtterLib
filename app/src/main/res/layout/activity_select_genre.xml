@@ -13,26 +13,30 @@
 
     <Button
         android:id="@+id/computer_science"
-        android:layout_margin="4dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_margin="4dp"
         android:text="Computer Science" />
+
     <Button
         android:id="@+id/fiction"
-        android:layout_margin="4dp"
-        android:layout_width="wrap_content"
+        android:layout_width="187dp"
         android:layout_height="wrap_content"
+        android:layout_margin="4dp"
         android:text="Fiction" />
+
     <Button
         android:id="@+id/memoirs"
-        android:layout_margin="4dp"
-        android:layout_width="wrap_content"
+        android:layout_width="186dp"
         android:layout_height="wrap_content"
+        android:layout_margin="4dp"
         android:text="Memoirs" />
+
     <Spinner
-        android:id="@+id/genre_spinner"
-        android:spinnerMode="dialog"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:id="@+id/book_spinner"
+        android:layout_width="262dp"
+        android:layout_height="59dp"
+        android:backgroundTint="@color/teal_200"
+        android:spinnerMode="dialog" />
 
 </LinearLayout>

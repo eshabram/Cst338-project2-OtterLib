@@ -22,4 +22,8 @@
     <string name="done">IT HAS BEEN DONE</string>
     <string name="futile">RESISTANCE IS FUTILE</string>
     <string name="goodbye">Goodbye</string>
+    <string name="hold_placed">Hold Has Been Placed!</string>
+    <string name="hold_not_placed">Hold Was Not Held</string>
+    <string name="book_held">Book Is Already Held</string>
+    <string name="trans_delete">Transactions Deleted</string>
 </resources>

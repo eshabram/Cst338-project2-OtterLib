@@ -9,7 +9,6 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import com.example.project2.databinding.ActivityManageSystemBinding;
-import com.example.project2.databinding.ActivityPlaceHoldBinding;
 
 import java.util.List;
 
@@ -72,7 +71,7 @@ public class ManageSystem extends AppCompatActivity {
                 } else {messageResId = R.string.incorrect_password; break;}
             } messageResId = R.string.no_username;
         }
-        if (privileged == true) {
+        if (privileged) {
             Toast toast = Toast.makeText(this, messageResId, Toast.LENGTH_LONG);
             toast.setGravity(Gravity.TOP, 0, 250);
             toast.show();

@@ -58,6 +58,7 @@ public class CreateAccount extends AppCompatActivity {
         boolean exist = false;
         boolean success;
         int messageResId = 20;
+        Toast toast = null;
         for (int i = 0; i < userBank.size(); i++) {
             if (userBank.get(i).getUsername().equalsIgnoreCase(username)) {
                 exist = true;
@@ -66,11 +67,15 @@ public class CreateAccount extends AppCompatActivity {
         }
         if (exist == false) {
             db.addUser(username, password);
-                messageResId = R.string.success;
+            db.trans().addTransaction(new Transaction("Type: New User - ", username, 0));
+            messageResId = R.string.success;
+            toast = Toast.makeText(this, "New Account: "+ username, Toast.LENGTH_LONG);
         } else {
             messageResId = R.string.invalid;
+            toast = Toast.makeText(this, messageResId, Toast.LENGTH_LONG);
+
         }
-        Toast toast = Toast.makeText(this, messageResId, Toast.LENGTH_LONG);
+
         toast.setGravity(Gravity.TOP, 0, 250);
         toast.show();                 Intent i = new Intent(CreateAccount.this, MainActivity.class);
         startActivity(i);

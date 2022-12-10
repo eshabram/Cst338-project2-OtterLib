@@ -19,10 +19,22 @@ public class User {
     @ColumnInfo(name="privileged")
     private int privileged;
 
-    public User(String username, String password, int privileged) {
+    @ColumnInfo(name="bookRes")
+    private int bookRes;
+
+    public User(String username, String password, int privileged, int bookRes) {
         this.username = username;
         this.password = password;
         this.privileged = privileged;
+        this.bookRes = bookRes;
+    }
+
+    public int getBookRes() {
+        return bookRes;
+    }
+
+    public void setBookRes(int bookRes) {
+        this.bookRes = bookRes;
     }
 
     public int getId() {
@@ -60,7 +72,6 @@ public class User {
     @NonNull
     @Override
     public String toString() {
-        return "User{" +
-                "userName='" + username;
+        return username;
     }
 }
